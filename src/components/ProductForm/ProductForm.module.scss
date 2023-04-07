@@ -1,0 +1,70 @@
+@import '../../variables';
+
+.productForm {
+    max-width: 500px;
+    margin: 0 auto;
+  
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+  
+    input {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.25rem;
+      margin-bottom: 1rem;
+  
+      &:focus {
+        outline: none;
+        border-color: $strong-blue;
+        box-shadow: 0 0 0 0.1rem rgba(0, 136, 204, 0.25);
+      }
+    }
+  
+    .buttonGroup {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1rem;
+      column-gap: 8px;
+    }
+  
+    .saveButton {
+        background-color: #007bff;
+        border: none;
+        color:  $white-color;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    
+        &:hover {
+          background-color: #0056b3;
+        }
+    }
+
+    .cancelButton {
+        background-color: $dark-moderate-blue;
+        border: none;
+        color:  $white-color;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+}

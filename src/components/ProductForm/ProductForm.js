@@ -34,29 +34,28 @@ const ProductForm = ({ product, onSubmit, onCancel }) => {
 
     return (
         <div className={styles.productForm}>
-            <h2>Edit Product</h2>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Nombre</label>
             <input
                 type="text"
                 id="name"
                 value={name}
                 onChange={handleNameChange}
             />
-            <label htmlFor="description">Description</label>
+            <label htmlFor="description">Descripción</label>
             <input
                 type="text"
                 id="description"
                 value={description}
                 onChange={handleDescriptionChange}
             />
-            <label htmlFor="price">Price</label>
+            <label htmlFor="price">Precio</label>
             <input
                 type="number"
                 id="price"
                 value={price}
                 onChange={handlePriceChange}
             />
-            <label htmlFor="image">Image</label>
+            <label htmlFor="image">Imagen</label>
             <input
                 type="text"
                 id="image"

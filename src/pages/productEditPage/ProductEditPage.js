@@ -14,25 +14,21 @@ const ProductEditPage = () => {
     useEffect(() => {
         const product = getProductById(productId);
         setProduct(product);
-      }, [productId]);
+    }, [productId]);
 
     const handleEdit = (editedProduct) => {
-        editProduct(parseInt(id),editedProduct);
+        editProduct(parseInt(id), editedProduct);
         goToDetailPage()
     };
 
-    const handleOnCancel = () => {
-        goToDetailPage()
-    }
-
-    const goToDetailPage =() =>{
+    const goToDetailPage = () => {
         navigate(`/products/${product.id}`);
     }
 
     return (
         <div className={styles.container}>
             <h1>Editar Producto</h1>
-            <ProductForm product={product} onSubmit={handleEdit} onCancel={handleOnCancel}/>
+            <ProductForm product={product} onSubmit={handleEdit} onCancel={() => goToDetailPage()}/>
         </div>
     );
 }

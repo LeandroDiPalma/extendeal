@@ -17,7 +17,7 @@ const ProductCreatePage = () => {
     }
     return (
         <div className={styles.container}>
-            <h1>Create a new product</h1>
+            <h1>Crear nuevo producto</h1>
             <ProductForm
                 onSubmit={handleCreateProduct}
             />
